@@ -1,0 +1,132 @@
+:root {
+  font-size       : 16px;
+  font-family     : 'Noto Sans JP';
+  --text-primary  : #b6b6b6;
+  --text-secondary: #ececec;
+  --bg-primary    : #242a3a;
+  --bg-secondary  : #141418;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color           : var(--text-secondary);
+  background-color: var(--bg-primary);
+  margin          : 0;
+  padding         : 0;
+  height          : 98%;
+  box-sizing      : border-box;
+}
+/* -----------main-container--------- */
+.container {
+  display        : flex;
+  flex-direction : column;
+  justify-content: center;
+  min-height     : 50vh;
+}
+
+.head {
+  display       : flex;
+  flex-direction: column;
+  box-sizing    : border-box;
+}
+/* -----------------Search----------- */
+.container form {
+  background-color: rgb(50, 67, 113);
+  border-radius   : 5px;
+  width           : 450px;
+  align-self      : center;
+  margin-bottom   : 60px;
+  box-shadow      : 0 4px 5px #1a202e;
+}
+
+.search-field,
+.submit {
+  background  : none;
+  border      : none;
+  outline     : none;
+  line-height : 40px;
+  position    : relative;
+  color       : var(--text-secondary);
+  padding-left: 20px;
+  width       : 85%;
+  font-size   : 20px;
+}
+
+.button {
+  position           : absolute;
+  box-sizing         : border-box;
+  background         : none;
+  border             : none;
+  transition-duration: 0.4s;
+  padding-top        : 8px;
+  padding-left       : 15px;
+  align-self         : center;
+}
+
+.button:hover {
+  filter: saturate(150%) brightness(120%)!important;
+}
+/* ------------main-logo---------- */
+.main-logo {
+  padding            : 15px;
+  width              : 175px;
+  height             : 175px;
+  align-self         : center;
+  transition-duration: 0.4s;
+  margin-bottom      : 40px;
+}
+
+.main-logo:hover {
+  filter: saturate(150%) brightness(120%)!important;
+}
+/* ---------Bookmarks main---------- */
+.main {
+  display        : flex;
+  justify-content: space-evenly;
+}
+
+.category {
+  display       : flex;
+  flex-direction: column;
+  width         : 150px;
+}
+
+.bookmarks {
+  display           : flex;
+  flex-direction    : column;
+  background-color  : #1a202e;
+  border-radius     : 5px;
+  align-items       : center;
+  box-shadow        : 0 4px 5px #0e1014;
+  -webkit-box-shadow: 0 4px 5px #0e1014;
+  -moz-box-shadow   : 0 4px 5px #0e1014;
+}
+
+.icon {
+  align-self     : center;
+  justify-content: center;
+  margin         : 15px;
+}
+
+li {
+  list-style-type: none;
+  font-size      : 20px;
+  padding        : 5px;
+}
+
+a:link {
+  color          : var(--text-secondary);
+  text-decoration: none;
+}
+
+a:visited {
+  color          : var(--text-secondary);
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0069de;
+}
